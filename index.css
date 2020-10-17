@@ -1,0 +1,14 @@
+.jumbotron
+{
+    margin-bottom: 0 !important;
+    background-color:blue!important ;
+}
+.navbar{
+    background-color: purple !important;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0 , 0.5);
+}
+.carousel{
+    border: solid #5637DD;
+}

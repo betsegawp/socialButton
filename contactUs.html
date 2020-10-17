@@ -24,17 +24,20 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-4 col-sm-3 col-md-2 allign-self-center">
+                   <a href="index.html"><img src="img/img/logo.png" class="img-fluid" /></a>
+                </div>
+                <div>
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
             </div>
         </div>
     </header>
-
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+        <div classs="container">
+            <a class="navbar-brand" href="index.html"img src="img/img/logo.png" height="30" width="30"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -87,51 +90,54 @@
             </div>
             <div class="col-md-10">
                 <form>
-                    <div class="row">
-                        <label for ="firstName"classs="col-md-2">First Name</label>
+                    <div class="form-group row">
+                        <label for ="firstName"classs="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
-                        <input type="text" id="firstName" name="firstName" placeholder="first name=" />
+                        <input type="text" class="form-control"id="firstName" name="firstName" placeholder="first name=" />
                     </div>
                     </div>
-                    <div class="row">
-                        <label for ="lastname"class="col-md-2">Last Name</label>
+                    <div class="form-group row">
+                        <label for ="lastname"class="col-md-2 col-form-label">Last Name</label>
                         <div class="col-md-10">
-                        <input type="text" id="lastname" name="lastName" placeholder="Last Name" />
+                        <input type="text" class="form-control"id="lastname" name="lastName" placeholder="Last Name" />
                     </div>
                     </div>
-                    <div class="row">
-                        <label for="tel"class="col-md-2">Tel</label>
+                    <div class="form-group row">
+                        <label for="tel"class="col-md-2 col-form-label">Tel</label>
                         <div class="col-5 col-md-3">
-                        <input type="tel" id="tel" name="tel" placeholder="Area Code" />
+                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Area Code" />
                     </div>
                     <div class="col-7">
                         <input type="tel" name="telNum" placeholder="Tel.Number" />
                     </div>
                 </div>
-                    <div class="row">
-                        <label for ="email"class="col-md-2">Email</label>
+                <div class="form-group row">
+                        <label for ="email" class="col-md-2 col-form-label">Email</label>
                         <div class="col-md-10">
-                        <input type="email" id="email" name="email" placeholder="Email" />
+                        <input type="email" class="form-control"id="email" name="email" placeholder="Email" />
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="form-group row">
                         <div class="col offset-md-2">
                         May we contact you?
-
-                        <input type="radio" id="contactYes" name="contactRadios" value="yes" default=yes/>
-                        <label for ="contactYes">yes</label>
-                        <input type="radio" id="contactNo" name="contactRadios" value="No" />
-                        <label for="contactNo">No</label>
+                            <div class="form-check form-check-inline">
+                                
+                        <input type="radio" id="contactYes" name="contactRadios" value="yes" default=yes class="form-check-input"/>
+                        <label for ="contactYes" class="form-check-label">yes</label>
+                            </div>
+                        <div class="form-check form-check-inline">
+                        <input type="radio" id="contactNo" name="contactRadios" value="No" class="form-check-input" />
+                        <label for="contactNo"class="form-check-label">No</label></div>
                     </div>
                 </div>
-                    <div class="row">
-                        <label for ="feedback"class="col-md-2">Your Feedback</label>
-                        <div class="col-md-10"><textarea id="feedback"  name="Feedback" rows="8"></textarea>
+                <div class="form-group row">
+                        <label for ="feedback"class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10"><textarea class="form-control"id="feedback"  name="Feedback" rows="8"></textarea>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
-                        <button type="submit">Send Feedback</button>
+                        <button type="submit"class="btn btn-primary">Send Feedback</button>
                     </div>
 </div>
                 </form>
